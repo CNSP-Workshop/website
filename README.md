@@ -1,6 +1,4 @@
-# CNSP-Workshop 2021
-# Website
-#
+# CNSP-Workshop 2021 - Website
 Workshop organisers:
 Giovanni M. Di Liberto
 Nathaniel Zuk
