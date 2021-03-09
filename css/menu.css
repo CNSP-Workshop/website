@@ -3,7 +3,7 @@
 	line-height:0;
 	padding:0;
 	z-index:99;position:relative;
-	margin-top: 40px;
+	margin-top: 80px;
 	
 	
 }
@@ -14,7 +14,7 @@ nav{float:right;padding-right:8px}
 }
 
 .sf-menu  li a,sf-menu  li a span{	
-	color:#fff;
+	color:#000000;
 	-webkit-transition: all 0.3s ease;
 -moz-transition: all 0.3s ease;
 -o-transition: all 0.3s ease;
@@ -28,16 +28,16 @@ transition: all 0.3s ease;
     font-weight:bold;
 	position:relative;
 	text-decoration:none !important;
-	padding:17px 14px 17px 14px;
+	padding:17px 5px 17px 14px;
 	}
-	.sf-menu > li > a> em{font-style:normal;display:inline-block;color:#fff}	
-.sf-menu > li > a >span,.sf-menu > li > a >em >span{font-style:normal;color:#fff;font-size:12px;font-family:Arial, Helvetica, sans-serif;line-height:14px;display:block;text-transform:none;font-weight:normal}
+	.sf-menu > li > a> em{font-style:normal;display:inline-block;color:#000000}	
+.sf-menu > li > a >span,.sf-menu > li > a >em >span{font-style:normal;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;line-height:14px;display:block;text-transform:none;font-weight:normal}
 
  .sf-menu  .sf-sub-indicator{background:url(../images/indicator.png) no-repeat 0 0;width:11px;height:6px;display:inline-block; position:relative;margin:9px 0 0 6px}	
 .sf-menu > li.current > a ,.sf-menu > li >a:hover,.sf-menu > li.sfHover > a {
 	
-background: #784526; /* Old browsers */
-text-shadow:1px 1px #a96e83 ;color:#fff !important;
+background: #80B0F0; /* Old browsers */
+text-shadow:1px 1px #999999 ;color:#000000 !important;
 }
 
 
