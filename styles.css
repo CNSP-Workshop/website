@@ -6,7 +6,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,c
 
 body {
 	font:12px/21px Arial, Helvetica, sans-serif;
-	color:#7d7d7d;
+	color:#5d5d5d;
 	position:relative;
 	min-width:980px;
 	background:url(images/tail-body2.gif);
@@ -18,6 +18,7 @@ html, body {
 .main {
 	float: left;
 	width: 400px;
+	/*mix-blend-mode: multiply;*/
 }
 .container_12 {
 	position:relative;
@@ -28,7 +29,8 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Times New Roman", Times, serif;
 	color:#454444;
-	padding-bottom:20px;
+	padding-bottom:15px;
+	padding-top:5px;
 	position:relative;
 	/*text-transform:uppercase;*/
 	font-weight:normal;
@@ -65,7 +67,7 @@ h4 {color:#ffffff;
 h5 {
 	font-size:18px;
 	line-height:20px;
-	padding-bottom:18px
+	padding-bottom:2px
 }
 h6 {
 	color:#373737;
@@ -104,7 +106,7 @@ a:hover {
 	display:block;
 }
 p {
-	padding-bottom:18px;
+	padding-bottom:8px;
 }
 .p0 {
 	padding-bottom:0 !important;
@@ -625,10 +627,41 @@ footer .list-1 li a{word-spacing:-1px}
 
 #particles-js{
   width: 100%;
-  height: 500px;
+  height: 1000px;
   /*background-color: #ffffff;*/
   background-image: url(images/tail-body2.gif) repeat-x;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+/* Minimal table */
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+
+td {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+  padding: 3px 5px;
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
 }
