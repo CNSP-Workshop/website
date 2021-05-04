@@ -5,7 +5,7 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top}ul{list-style:none}blockquote,q{quotes:none}table,table td{padding:0;border:none;border-collapse:collapse}img{vertical-align:top}embed{vertical-align:top}article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
 
 body {
-	font:12px/21px Arial, Helvetica, sans-serif;
+	font:14px/21px Arial, Helvetica, sans-serif;
 	color:#5d5d5d;
 	position:relative;
 	min-width:980px;
@@ -24,10 +24,11 @@ html, body {
 	position:relative;
 }
 /*----- txt,links,lines,titles -----*/
-	
+
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Times New Roman", Times, serif;
+	/*font-family: "Times New Roman", Times, serif;*/
+	font-family: Arial, Helvetica, sans-serif;
 	color:#454444;
 	padding-bottom:15px;
 	padding-top:5px;
@@ -38,8 +39,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight:bold;
 }
 h1 {
-	font-size:28px;
-	line-height:30px;
+	font-size:32px;
+	line-height:34px;
 }
 h2 {
 	font-size:24px;
@@ -71,8 +72,8 @@ h5 {
 }
 h6 {
 	color:#373737;
-	font-size:13px;
-	line-height:16px;
+	font-size:18px;
+	line-height:20px;
 	padding-bottom:12px
 }
 a {
@@ -280,7 +281,7 @@ p {
 }
 /*********************************header*************************************/
 .header {
-	
+
 	margin: 0 auto;
 }
 
@@ -290,7 +291,7 @@ p {
 	background:url(images/tail-body2.gif) repeat-x;
 	background-repeat: no-repeat;
 	background-size: contain;
-	
+
 }
 /* .header_bg {background:url(images/bg-main.gif) repeat-x;} */
 
@@ -315,7 +316,7 @@ p {
 	width: 1037px;
 	height: 151px;
 	display: block;
-     
+
 }
 
 
@@ -439,7 +440,7 @@ section#content {
 }
 .box-team p {
 	line-height:21px;
-	
+
 }
 
 .dropcap_1 {
@@ -459,7 +460,7 @@ section#content {
 	-webkit-border-radius:37px;text-shadow:1px 1px #5D2E11
 }
 
-.box-product{background:url(images/tail-body2.gif);
+.box-product{background:url(images/tail-2.gif);
      border-radius:6px;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;padding:10px 9px 14px;margin-bottom:20px
