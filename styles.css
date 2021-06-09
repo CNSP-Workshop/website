@@ -472,6 +472,11 @@ section#content {
 .box-product:hover{background:#8eba6f}
 .box-product:hover a,.box-product:hover p{color:#fff}
 
+.payment_form {
+	width: 320px;
+	position: relative;
+	left: 240px;
+}
 
 /********************** links ************************/
 .link-1 {
@@ -667,4 +672,3 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
-
