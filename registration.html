@@ -40,9 +40,26 @@
   <!--==============================content====================================-->
   <section id="content">
     <div class="container_12">
-      <div class="wrapper border-vert">
+      <!--<div class="wrapper border-vert">-->
+      <div class="wrapper">
       <h5>The deadline has passed, and we are no longer accepting registrations.</h5>
+      <h5>If you have not paid for the registration yet, you can find the payment form below:</h5>
+    </div>
       <br>
+      <div class="payment_form">
+          <h5>Payment information:</h5>
+          <br>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="MQN5GMS5Z6Y3J">
+              <table>
+                  <tr><td><input type="hidden" name="on0" value="Attendee Name">Attendee Name</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                  <tr><td><input type="hidden" name="on1" value="Attendee Email Address">Attendee Email Address</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+              </table>
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+      </div>
       <!-- Insert Google forms registration form here -->
       <!--<h5><i>If you have not yet paid for your registration, you can do so below:</i></h5>
       <br>
@@ -92,7 +109,7 @@
           </div>
         </article>
 -->
-      </div>
+      <!--</div>-->
     </div>
   </section>
 </div>
