@@ -1,10 +1,8 @@
-# CNSP-Workshop 2021 - Website
+# CNSP Workshop Website
+
 Workshop organisers:
-Giovanni M. Di Liberto
-Nathaniel Zuk
-Michael J. Crosse
+Giovanni Di Liberto, Nathaniel Zuk, Mick Crosse, Aaron Nidiffer, Giorgia Cantisani, Stephanie Haro
 
 Website authors:
-Giovanni M. Di Liberto
-
-Note: This is private at the moment. Let's remember to make it public when the time comes :) 
+Giovanni Di Liberto (first version)
+All organisers have been contributing since
