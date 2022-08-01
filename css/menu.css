@@ -28,7 +28,7 @@ transition: all 0.3s ease;
     font-weight:bold;
 	position:relative;
 	text-decoration:none !important;
-	padding:17px 5px 17px 14px;
+	padding:17px 10px 17px 10px;
 	}
 	.sf-menu > li > a> em{font-style:normal;display:inline-block;color:#000000}	
 .sf-menu > li > a >span,.sf-menu > li > a >em >span{font-style:normal;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;line-height:14px;display:block;text-transform:none;font-weight:normal}
