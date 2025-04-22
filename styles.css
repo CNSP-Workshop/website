@@ -283,6 +283,10 @@ p {
 .header {
 
 	margin: 0 auto;
+	width: 1037px;
+	height: 151px;
+	display: flex;
+	align-items: end;
 }
 
 .header_bg {
@@ -293,14 +297,12 @@ p {
 	background-size: contain;
 
 }
-/* .header_bg {background:url(images/bg-main.gif) repeat-x;} */
 
 .header h1 {
-    width: 200px;
-	float:left;
-	display:block;
+	width: auto;
 	font-size: 30px;
-	padding:0px 0 0 8px;background:none
+	padding:0px 0 0 8px;
+	background:none;
 }
 
 .header h2 {
@@ -308,18 +310,14 @@ p {
 	font-size: 14px;
 }
 
-
 .header a{color: #ffffff}
 .header a:hover{color: #ffffff; text-decoration:none;}
 
-.header {
-	width: 1037px;
-	height: 151px;
-	display: block;
 
+.sf-menu {
+	display: flex;
+	align-items: end;
 }
-
-
 
 
 /********************** Content style ************************/
