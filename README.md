@@ -1,8 +1,5 @@
-# CNSP Workshop Website
+# CNSP Website
 
-Workshop organisers:
-Giovanni Di Liberto, Nathaniel Zuk, Mick Crosse, Aaron Nidiffer, Giorgia Cantisani, Stephanie Haro, Magdalena Kachlicka
+https://cnspworkshop.net/
 
-Website authors:
-Giovanni Di Liberto (first version)
-All organisers have been contributing since
+Currently managed by Magdalena Kachlicka.
