@@ -143,39 +143,93 @@
 			</p>
 
 			<div class="grid_12" style="display:flex;flex-wrap:wrap;gap:10px;padding:0;">
-				<div style="position:relative;width:23%;min-width:150px;">
+				<div style="position:relative;width:23%;min-width:150px;cursor:pointer;" onclick="openLightbox(0)">
 					<img src="https://placehold.co/300x220?text=Photo+1" alt="Hackathon photo 1" style="width:100%;height:auto;display:block;" />
 					<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:#fff;font-size:12px;padding:3px 6px;">TBC</div>
 				</div>
-				<div style="position:relative;width:23%;min-width:150px;">
+				<div style="position:relative;width:23%;min-width:150px;cursor:pointer;" onclick="openLightbox(1)">
 					<img src="https://placehold.co/300x220?text=Photo+2" alt="Hackathon photo 2" style="width:100%;height:auto;display:block;" />
 					<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:#fff;font-size:12px;padding:3px 6px;">TBC</div>
 				</div>
-				<div style="position:relative;width:23%;min-width:150px;">
+				<div style="position:relative;width:23%;min-width:150px;cursor:pointer;" onclick="openLightbox(2)">
 					<img src="https://placehold.co/300x220?text=Photo+3" alt="Hackathon photo 3" style="width:100%;height:auto;display:block;" />
 					<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:#fff;font-size:12px;padding:3px 6px;">TBC</div>
 				</div>
-				<div style="position:relative;width:23%;min-width:150px;">
+				<div style="position:relative;width:23%;min-width:150px;cursor:pointer;" onclick="openLightbox(3)">
 					<img src="https://placehold.co/300x220?text=Photo+4" alt="Hackathon photo 4" style="width:100%;height:auto;display:block;" />
 					<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:#fff;font-size:12px;padding:3px 6px;">TBC</div>
 				</div>
-				<div style="position:relative;width:23%;min-width:150px;">
+				<div style="position:relative;width:23%;min-width:150px;cursor:pointer;" onclick="openLightbox(4)">
 					<img src="https://placehold.co/300x220?text=Photo+5" alt="Hackathon photo 5" style="width:100%;height:auto;display:block;" />
 					<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:#fff;font-size:12px;padding:3px 6px;">TBC</div>
 				</div>
-				<div style="position:relative;width:23%;min-width:150px;">
+				<div style="position:relative;width:23%;min-width:150px;cursor:pointer;" onclick="openLightbox(5)">
 					<img src="https://placehold.co/300x220?text=Photo+6" alt="Hackathon photo 6" style="width:100%;height:auto;display:block;" />
 					<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:#fff;font-size:12px;padding:3px 6px;">TBC</div>
 				</div>
-				<div style="position:relative;width:23%;min-width:150px;">
+				<div style="position:relative;width:23%;min-width:150px;cursor:pointer;" onclick="openLightbox(6)">
 					<img src="https://placehold.co/300x220?text=Photo+7" alt="Hackathon photo 7" style="width:100%;height:auto;display:block;" />
 					<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:#fff;font-size:12px;padding:3px 6px;">TBC</div>
 				</div>
-				<div style="position:relative;width:23%;min-width:150px;">
+				<div style="position:relative;width:23%;min-width:150px;cursor:pointer;" onclick="openLightbox(7)">
 					<img src="https://placehold.co/300x220?text=Photo+8" alt="Hackathon photo 8" style="width:100%;height:auto;display:block;" />
 					<div style="position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.6);color:#fff;font-size:12px;padding:3px 6px;">TBC</div>
 				</div>
 			</div>
+
+			<!-- Lightbox overlay -->
+			<div id="lightbox-overlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;text-align:center;" onclick="if(event.target===this){closeLightbox();}">
+				<span onclick="closeLightbox()" style="position:absolute;top:20px;right:35px;color:#fff;font-size:36px;font-weight:bold;cursor:pointer;line-height:1;">&times;</span>
+				<span onclick="changeLightbox(-1)" style="position:absolute;top:50%;left:15px;transform:translateY(-50%);color:#fff;font-size:48px;font-weight:bold;cursor:pointer;user-select:none;padding:0 10px;">&#10094;</span>
+				<span onclick="changeLightbox(1)" style="position:absolute;top:50%;right:15px;transform:translateY(-50%);color:#fff;font-size:48px;font-weight:bold;cursor:pointer;user-select:none;padding:0 10px;">&#10095;</span>
+				<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:90%;max-height:85%;">
+					<img id="lightbox-img" src="" alt="" style="max-width:100%;max-height:80vh;display:block;margin:0 auto;" />
+					<div id="lightbox-caption" style="color:#fff;font-size:14px;margin-top:10px;">TBC</div>
+				</div>
+			</div>
+
+			<script>
+				var lightboxImages = [
+					{src: "https://placehold.co/1000x700?text=Photo+1", caption: "TBC"},
+					{src: "https://placehold.co/1000x700?text=Photo+2", caption: "TBC"},
+					{src: "https://placehold.co/1000x700?text=Photo+3", caption: "TBC"},
+					{src: "https://placehold.co/1000x700?text=Photo+4", caption: "TBC"},
+					{src: "https://placehold.co/1000x700?text=Photo+5", caption: "TBC"},
+					{src: "https://placehold.co/1000x700?text=Photo+6", caption: "TBC"},
+					{src: "https://placehold.co/1000x700?text=Photo+7", caption: "TBC"},
+					{src: "https://placehold.co/1000x700?text=Photo+8", caption: "TBC"}
+				];
+				var lightboxIndex = 0;
+
+				function openLightbox(index) {
+					lightboxIndex = index;
+					updateLightbox();
+					document.getElementById('lightbox-overlay').style.display = 'block';
+					document.addEventListener('keydown', lightboxKeyHandler);
+				}
+
+				function closeLightbox() {
+					document.getElementById('lightbox-overlay').style.display = 'none';
+					document.removeEventListener('keydown', lightboxKeyHandler);
+				}
+
+				function changeLightbox(direction) {
+					lightboxIndex = (lightboxIndex + direction + lightboxImages.length) % lightboxImages.length;
+					updateLightbox();
+				}
+
+				function updateLightbox() {
+					var item = lightboxImages[lightboxIndex];
+					document.getElementById('lightbox-img').src = item.src;
+					document.getElementById('lightbox-caption').textContent = item.caption;
+				}
+
+				function lightboxKeyHandler(e) {
+					if (e.key === 'ArrowLeft') { changeLightbox(-1); }
+					else if (e.key === 'ArrowRight') { changeLightbox(1); }
+					else if (e.key === 'Escape') { closeLightbox(); }
+				}
+			</script>
 
         </article>
 
